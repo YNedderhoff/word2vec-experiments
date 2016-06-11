@@ -4,7 +4,7 @@
 import org.apache.spark.mllib.feature.Word2Vec
 import org.apache.spark.{SparkConf, SparkContext}
 
-object SimpleApp {
+object word2vecClient {
   def main(args: Array[String]) {
     val logFile = "logs/log" // Should be some file on your system
     val conf = new SparkConf().setAppName("Simple Application").setMaster("local[*]")
